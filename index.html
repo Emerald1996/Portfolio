@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <title>EmeraldEmma's | portfolio</title>
+
+</head>
+
+<body>
+
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">{EMERALD}</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+
+                        <a href="https://www.linkedin.com/in/emmanuel-odianosen-b1796320b" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://codepen.io/emma-emerald" target="_blank" class="home__social-icon">
+                            <i class="uil uil-globe"></i>
+                        </a>
+
+                        <a href="https://github.com/Emerald1996/Emerald" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="https://i.postimg.cc/fLy2rBFd/1636376425349-trimmed.png" alt="home_img" width="400px" height="300px">
+                       
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hey, I'm Emerald!</h1>
+                        <h3 class="home__subtitle"> Web designer/Web Developer</h3>
+                        <p class="home__description">Creating responsive websites and designs in an array of
+                            programming langauges.</p>
+                        <a download href="https://file.fm/u/gf6daggk9" target="_blank" class="button button--flex">
+                            Download CV
+                            <i class="uil uil-message button__icon"></i>
+                        </a> <br>
+                        <a href="#contact" class="button button--flex" id="contact_me">
+                            Contact Me
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div vlass="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline about section " id="about">
+            <h2 class="section__title timeline">About Me</h2>
+            <span class="section__subtitle timeline">A Little Introduction</span>
+
+            <div class="about__container container grid">
+                <div class="home__img">
+                    <svg class="home__blob-img" width="305" height="288" viewBox="0 0 305 288" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M141.282 0.0692367C211.192 -1.83127 280.706 35.4793 300.683 101.475C319.518 163.7 273.845 221.706 219.506 258.49C170.219 291.853 106.126 300.31 57.3972 266.161C7.26383 231.029 -11.3943 167.329 6.84802 109.463C25.9015 49.0226 77.0363 1.81576 141.282 0.0692367Z"
+                            fill="url(#pattern0)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M141.282 0.0692367C211.192 -1.83127 280.706 35.4793 300.683 101.475C319.518 163.7 273.845 221.706 219.506 258.49C170.219 291.853 106.126 300.31 57.3972 266.161C7.26383 231.029 -11.3943 167.329 6.84802 109.463C25.9015 49.0226 77.0363 1.81576 141.282 0.0692367Z"
+                            fill="#FF8CF4" fill-opacity="0.15" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0"
+                                    transform="translate(0 -0.0282561) scale(0.0023753 0.00251551)" />
+                            </pattern>
+                            <image id="image0" width="421" height="420"
+                                xlink:href="https://i.postimg.cc/KjskZPxd/1636272739903-trimmed.png" />
+                        </defs>
+                    </svg>
+                </div>
+
+
+
+
+
+                <div class="about-data">
+                    <p class="about__description">
+                        I'm AGIMEZELU EMMANUEL EMERALD! <br>
+                        Customers are the heartbeat of every company, their
+                        satisfaction equates to the satisfaction of the company
+                        as well as mine. What excites me the most about merchant
+                        success is how it requires a mix of product knowledge,
+                        customer service skills, networking capability,
+                        and excellent communication abilities that will ensure the
+                        customer actually becomes successful. Tech in the other hand Freaks
+                        me a lot. I love to do or see anything which revolves around tech and its orbit.
+                    </p>
+
+                    <div class="about__info">
+
+                        <div>
+                            <span class="about__info-title timeline">Sites </span>
+                            <span class="about__info-name timeline">Personal or<br> Business</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title timeline">Apps</span>
+                            <span class="about__info-name timeline">User <br> Interactive</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title timeline">Customer</span>
+                            <span class="about__info-name timeline">Support/ <br> Success</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a href="#portfolio" class="button button--flex timeline">
+                            Projects
+                            <i class="uil uil-link button__icon timeline"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="timeline skills section" id="skills">
+            <h2 class="section__title timeline">Skills</h2>
+            <span class="section__subtitle timeline">My Technical Level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <i class="uil uil-pen skills__icon"></i>
+
+                    <h1 class="skills__title">Writing</h1>
+                </div>
+
+                <div>
+                    <i class="uil uil-book skills__icon"></i>
+                    <h1 class="skills__title">Clear communication</h1>
+
+                </div>
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+
+
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Programming Lanuguages</h1>
+                            <span class="skills__subtitle">Front-end</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">CSS</h2>
+                                <span class="skills__number">75%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">JavaScript</h2>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">Python</h2>
+                                <span class="skills__number">35%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-books skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Libraries</h1>
+                            <span class="skills__subtitle">and Frameworks</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">Bootstrap</h2>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">jQuery</h2>
+                                <span class="skills__number">55%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__jq"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">SASS</h2>
+                                <span class="skills__number">50%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sass"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">Node.js</h2>
+                                <span class="skills__number">35%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__node"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">React</h2>
+                                <span class="skills__number">55%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h2 class="skills__name">Angular</h2>
+                                <span class="skills__number">40%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__angular"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            </div>
+        </section>
+
+
+        <section class="timeline qualification section">
+            <h2 class="section__title">Achievements</h2>
+            <span class="section__subtitle">My Personal Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#certificates'>
+                        <i class="uil uil-award qualification__icon"></i>
+                        Certificates
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target='#qualifications'>
+                        <i class="uil uil-medal qualification__icon"></i>
+                        Qualifications
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <div class="qualification__content qualification__active" data-content id="certificates">
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="certification__title"><a
+                                        href="https://www.freecodecamp.org/certification/fcc1643d24d-82ed-4de2-a689-58ee9c43058e/responsive-web-design">Responsive
+                                        Web Design</a></h3>
+                                <span class="qualification__subtitle">300 Hours FreeCodeCamp Certification</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="certification__title"><a href="#">GOOGLE
+                                        Africa development scholarship(ongoing)</a></h3>
+                                <span class="qualification__subtitle">Mobile Web Specialist</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="qualification__content" data-content id="qualifications">
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">O' Level</h3>
+                                <span class="qualification__subtitle">in Science and Tecnology</span>
+
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2006-2012
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">DIPLOMA</h3>
+                                <span class="qualification__subtitle">in Computer science
+                                    University of ilorin, Nigeria.</span>
+
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - Present
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="timeline services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle" id="section__sub">Here's what i render</span>
+
+            <div class="services__container container grid">
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+
+
+                        <h3 class="services__title">Creating <br> Websites</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend Developer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I develop websites to promote your business from the grassroot using an array of
+                                        programming languages that best suites your website needs.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I always focus on user-interaction to ensure customers/clients can navigate the
+                                        site smoothly and consistently.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I also do regular checks where you can opt for me to regularly update your
+                                        website - whether for information update or files upload.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="services__content">
+                    <div>
+
+                        <i class="uil uil-user-circle services__icon"></i>
+
+                        <h3 class="services__title">Personal <br> Portfolios</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Web developer <br> / Designer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I build E-commerce site for the best navigation and fast sales of your products,
+                                        personal portfolios to help showcase your skills to potential
+                                        clients/recruiters.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I always focus on user-interaction to ensure potential clients/recruiters can
+                                        navigate the site easily and smoothly.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I render website "after-care" where you can hire me to regularly update your
+                                        portfolio, whether that be inforamtion, projects or images.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-users-alt services__icon"></i>
+
+
+                        <h3 class="services__title">customer <br> Support</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Over a year <br> in Customer support </h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <li class="services__modal-service">
+                                    <p> I enjoy the interactive process with customers
+                                        because it always provide me an opportunity to put a smile on the customers face
+                                        at all times.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>customer service is what am always being enthusiastic
+                                        about; From addressing their issues to resolving them
+                                        in a timely efficient manner guaranteed a 100%.</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-desktop-alt services__icon"></i>
+
+
+                        <h3 class="services__title">Web <br> Designs</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        <p>See <a href="https://www.linkedin.com/feed/update/urn:
+                            li:activity:6859765584364630016?commentUrn=urn%3Ali%3Acomment%3A%
+                            28activity%3A6859765584364630016%2C6860200149096968192%29" target="_blank"><strong>TESTIMONIAL</strong></a>
+                        </p>
+                    </span>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="timeline portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">My recent work</span>
+
+            <div class="portfolio__container container">
+
+                <div class="portfolio__content grid">
+                    <img src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?ixlib=rb-1.2.1&ixid
+                    =MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWUlMjBvZmZpY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Websites, Portfolios and Applications</h3>
+                        <p class="portfolio__description">Building user-friendly, Responsive, and
+                            functional websites is what am always enthusiast. Checkout my code playground</p>
+                        <a href="https://codepen.io/emma-emerald"
+                            class="button button--flex button--small portfolio__button">
+                            Explore
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="project section">
+            <div class="project__bg">
+
+            </div>
+            <div class="timeline project__container container grid">
+                <div class="project__data">
+                    <h2 class="project__title">Let's chat!</h2>
+                    <p class="project__description">Let's work together!
+                    </p>
+                    <a href="#contact" class="button button--flex button--white">
+                        Contact Me
+                        <i class="uil uil-message project__icon button__icon"></i>
+                    </a>
+                </div>
+
+                <img src="https://i.postimg.cc/m2t1m5SR/1636271556849-trimmed.png" class="project__img" width="200px"
+                    height="300px">
+            </div>
+
+        </section>
+
+        <section class="timeline contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in Touch</span>
+            <div class="contact__container container grid">
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Email Me</h3>
+                        <span class="contact__subtitle">agimezeluemmanuel@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-location-point contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Ilorin, Nigeria.</span>
+                    </div>
+                </div>
+
+
+                <div class="contact__information">
+                    <i class="uil uil-whatsapp contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Whatsapp me</h3>
+                        <span class="contact__subtitle">+2348102956759</span>
+                    </div>
+                </div>
+
+
+
+                <div class="contact__information">
+                    <i class="uil uil-facebook contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Search</h3>
+                        <span class="contact__subtitle">Agimezelu Emmanuel Odianosen</span>
+                    </div>
+                </div>
+
+        </section>
+
+        <section>
+
+            <div>
+                <form class="timeline connect" action="https://formsubmit.co/agimezeluemmanuel@gmail.com" method="POST">
+                    <label class="custom-field">
+                        <input type="hidden" name="_subject" value="New Email!">
+                        <input type="email" required />
+                        <span class="placeholder">Email Address</span>
+                    </label>
+                    <input type="hidden" name="_next" value="https://rachelmcdonald.co/thankyou.html">
+                    <label class="custom-field">
+                        <input type="text" required />
+                        <span class="placeholder">Write your message here</span>
+                    </label>
+                    <button class="button button--flex button--white" id="connect-btn" type="submit">Send<i
+                            class="uil uil-message button__icon"></i></button>
+                </form>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Emerald</h1>
+                    <span class="footer__subtitle">Web designer/Web Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="mailto:agimezeluemmanuel@gmail.com" class="footer__social">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+
+
+                    <a href="https://www.facebook.com/agimezelu.emmanuel/" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/emmanuel-odianosen-b1796320b" target="_blank"
+                        class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Agimezelu Emmanuel.</p>
+        </div>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script src="main.js"></script>
+    <script src="scroll.js"></script>
+
+
+</body>
+
+</html>
