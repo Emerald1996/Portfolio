@@ -249,10 +249,14 @@ img{
 .home__title{
   font-size: 2rem;
 }
+.home__title span{
+  color: rgb(189, 47, 189);
+  -webkit-text-stroke: 1px white;
+}
 
 .home__subtitle{
   font-size: 1.125rem;
-  color: rgb(27, 8, 26);
+  color: rgb(189, 47, 189);
   font-weight: 500;
   margin-bottom: .75rem;
 }
@@ -365,6 +369,9 @@ img{
   font-size: 1.5rem;
   font-weight: 600;
   color: plum;
+}
+.section__subtitle{
+  color: rgb(189, 47, 189);
 }
 
 .about__info-name{
