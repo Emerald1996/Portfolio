@@ -296,7 +296,7 @@ img{
 .button{
   display: inline-block;
   background-color: rgb(78, 15, 78);
-  color: black;
+  color: white;
   padding: 1rem;
   border-radius: .5rem;
   font-weight: 500;
@@ -1316,9 +1316,8 @@ a:hover, .button:hover{
     color: transparent;
     text-align: center;
     -webkit-text-stroke: 1px rgb(231, 218, 218);
-    text-shadow: white;
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 main>h1::after{
     content: '';
@@ -1352,7 +1351,7 @@ main>h1::after{
   position:relative;
   cursor:pointer;
   transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  box-shadow: 0 0 5px white,0 0 5px white,0 0 5px white;
   overflow:hidden;
   color:white;
   font-family:'Roboto';
@@ -1367,6 +1366,7 @@ main>h1::after{
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
+  
 }
 .tile .text
 {
@@ -1377,6 +1377,7 @@ main>h1::after{
 }
 .tile h1
 {
+  text-align: center;
  -webkit-text-stroke: 2px black;
   font-weight:300;
   margin:0;
@@ -1414,7 +1415,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 }
 .tile:hover img
 {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 .tile:hover .animate-text
 {
